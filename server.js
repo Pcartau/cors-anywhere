@@ -47,3 +47,8 @@ cors_proxy.createServer({
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
+
+// HEROKU SHIT
+setInterval(() => {
+  fetch('https://nft-rewards-cors-anywhere.herokuapp.com');
+}, 1000 * 60 * 15);
